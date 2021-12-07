@@ -1,17 +1,13 @@
 // ./src/components/Header.tsx
-import { View, StyleSheet } from "react-native";
-import { Text } from "react-native-paper";
+import { View, StyleSheet, Text } from "react-native";
 
-const Header = (props: any) => {
+export const Header = () => {
   return (
     <View style={styles.container}>
-      <Text
-        style={styles.header}
-        {...props}
-      />
+      <Text style={styles.header} />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
